@@ -1,3 +1,6 @@
+// test js file to html
+console.log('testing')
+
 // set up database, *refer to class notes*
 const form = document.querySelector('form')
 form.addEventListener('submit', (searchPokemonEvent) => {
@@ -8,7 +11,7 @@ form.addEventListener('submit', (searchPokemonEvent) => {
     pokemonData(pokemonValue)
 })
 
-// https://www.geeksforgeeks.org/how-to-use-the-javascript-fetch-api-to-get-data/
+
 const pokemonData = async (pokemonInfo) => {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonInfo}`)
     const data = await response.json()
@@ -19,8 +22,12 @@ const pokemonData = async (pokemonInfo) => {
     document.body.append(pokemonNameInfo)
     const pokemonSprite = document.getElementsByClassName('pokmeonSprite');
     document.body.append(pokemonSprite)
+    const pokemonAbility = document.getElementsByClassName('pokemonAbility')
+    document.body.append(pokemonAbility)
 }
 
+
+// tried using this link for some guidance https://www.geeksforgeeks.org/how-to-use-the-javascript-fetch-api-to-get-data/
 // function showPokemonInfo(data) {
 //     let table = 
 //     `<tr>

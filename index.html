@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>week7Day3 Pokemon API homework</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Who's that Pokemon?!</h1>
@@ -11,9 +12,10 @@
         <input type="text" id="pokemonName" placeholder="Enter a pokemon name">
         <button onclick="pokemonData()" type="submit">I choose you!</button>
     
-        <div>
+        <div class="display">
             <p class="pokemonName">Pokemon's Info</p>>
-            <img class="pokemonSprite" src="" alt="image">
+            <img class="pokemonSprite" src="" alt="image" class="sprite">
+            <p class="pokemonAbility"></p>
         </div>
     </form>
     <script src="main.js"></script>
