@@ -18,7 +18,7 @@ const pokemonData = async () => {
         const pokeSprite2 = data.sprites.back_default;
         const pokeAbility = data.abilities[0].ability.name;
         const pokeAbility2 = data.abilities[1].ability.name;
-        const pokeAbility3 = data.abilities[2].ability.name;
+       
 
         const pokeDisplay = document.getElementById("pokemon-display");
         pokeDisplay.innerHTML = `
@@ -27,7 +27,6 @@ const pokemonData = async () => {
         <img src="${pokeSprite2}" id="sprite-text">
         <div>Ability 1: ${pokeAbility.toUpperCase()}</div>
         <div>Ability 2: ${pokeAbility2.toUpperCase()}</div>
-        <div>Ability 3: ${pokeAbility3.toUpperCase()}</div>
         `;
     } catch (error) {
         console.error("Pokemon doesn't exist:", error)
